@@ -31,6 +31,28 @@ The objective of this project is to develop an application for android OS, using
   </tr>
 </table>
 
+## Want to contribute ?
+
+Have a read to the **contributions.md** file [here](https://github.com/Abhijit2505/edualgo-app-demo/blob/master/CONTRIBUTIONS.md)
+
 ## Tech Stacks
 
-<img src ="https://github.com/Abhijit2505/edualgo-app-demo/blob/master/Assets/techstacks2.png" height="160">
+<img src ="https://github.com/Abhijit2505/edualgo-app-demo/blob/master/Assets/techstacks2.png" height="130">
+
+## License
+
+This package is under **MIT License** copyright @<a href = "https://github.com/Abhijit2505">Abhijit Tripathy</a>
+
+## About The Creator
+
+<table>
+    <tr>
+        <td>
+            <img src = "https://edualgo.github.io/documentation/assets/images/Abhijit23.jpeg" height = "100">
+        </td>
+            <td>
+                <a href="https://github.com/Abhijit2505">Abhijit Tripathy</a></br>
+    DSA Developer and Python Programmer
+        </td>
+        </tr>
+    </table>
