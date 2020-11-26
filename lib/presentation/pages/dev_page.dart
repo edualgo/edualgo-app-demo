@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 class DevPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(0, 200, 0, 0),
+    return Center(
       child: Text(
         'Know the Developer',
         style: TextStyle(
