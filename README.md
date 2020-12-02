@@ -42,6 +42,11 @@ The objective of this project is to develop an application for android OS, using
 
 <img src ="https://github.com/Abhijit2505/edualgo-app-demo/blob/master/Assets/techstacks2.png" height="130">
 
+## Running the app in your local machine
+- Fork this repo
+- Clone this repo using `git clone <repo-URL>
+- Run it using VS Code or your favourite compiler and an emulator.
+
 ## License
 
 This package is under **MIT License** copyright @<a href = "https://github.com/Abhijit2505">Abhijit Tripathy</a>
