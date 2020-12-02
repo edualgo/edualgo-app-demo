@@ -44,7 +44,7 @@ The objective of this project is to develop an application for android OS, using
 
 ## Running the app in your local machine
 - Fork this repo
-- Clone this repo using `git clone <repo-URL>
+- Clone this repo using `git clone <repo-URL>`
 - Run it using VS Code or your favourite compiler and an emulator.
 
 ## License
