@@ -4,10 +4,11 @@
 // AutoRouteGenerator
 // **************************************************************************
 
+import 'package:edualgo_app_demo/presentation/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:edualgo_app_demo/presentation/pages/splash.dart';
+
 import 'package:edualgo_app_demo/presentation/pages/first_screen.dart';
 import 'package:edualgo_app_demo/presentation/pages/index_page.dart';
 import 'package:edualgo_app_demo/dowload.dart';
@@ -23,7 +24,7 @@ class Router_gen {
     switch (settings.name) {
       case Router_gen.splashPage:
         return MaterialPageRoute<dynamic>(
-          builder: (_) => SplashPage(),
+          builder: (_) => SplashScreen(),
           settings: settings,
         );
       case Router_gen.firstPage:
