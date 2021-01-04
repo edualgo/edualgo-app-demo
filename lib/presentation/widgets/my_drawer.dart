@@ -1,4 +1,5 @@
 import 'package:edualgo_app_demo/core/colors.dart';
+import 'package:edualgo_app_demo/presentation/pages/SortingScreen.dart';
 import 'package:edualgo_app_demo/presentation/pages/code_card.dart';
 import 'package:edualgo_app_demo/presentation/routes/route.gr.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ Drawer myDrawer = Drawer(
 //              padding: const EdgeInsets.fromLTRB(20, 20, 20, 10),
           child: DrawerHeader(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(15.0),
               child: Text(
                 'eduAlgo',
                 style: TextStyle(
@@ -34,7 +35,7 @@ Drawer myDrawer = Drawer(
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Container(
             padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
             decoration: BoxDecoration(
@@ -62,7 +63,7 @@ Drawer myDrawer = Drawer(
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Container(
             padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
             decoration: BoxDecoration(
@@ -91,7 +92,7 @@ Drawer myDrawer = Drawer(
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Container(
             padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
             decoration: BoxDecoration(
@@ -120,7 +121,7 @@ Drawer myDrawer = Drawer(
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Container(
             padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
             decoration: BoxDecoration(
@@ -149,7 +150,7 @@ Drawer myDrawer = Drawer(
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Container(
             padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
             decoration: BoxDecoration(
@@ -178,7 +179,7 @@ Drawer myDrawer = Drawer(
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Container(
             padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
             decoration: BoxDecoration(
@@ -203,6 +204,37 @@ Drawer myDrawer = Drawer(
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => CodeCard()),
+                );
+              },
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Container(
+            padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
+            decoration: BoxDecoration(
+              color: kThemeColor,
+              border: Border.all(
+                color: Colors.black,
+              ),
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            child: ListTile(
+              title: Text(
+                'Sorting Screen',
+                style: TextStyle(
+                  fontFamily: 'Recursive',
+                  fontSize: 18.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SortingScreen()),
                 );
               },
             ),
