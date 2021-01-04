@@ -179,7 +179,10 @@ Drawer myDrawer = Drawer(
           ),
         ),
         Padding(
+
           padding: const EdgeInsets.all(15.0),
+
+        
           child: Container(
             padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
             decoration: BoxDecoration(
@@ -209,6 +212,7 @@ Drawer myDrawer = Drawer(
             ),
           ),
         ),
+
         Padding(
           padding: const EdgeInsets.all(15.0),
           child: Container(
@@ -240,6 +244,7 @@ Drawer myDrawer = Drawer(
             ),
           ),
         ),
+
       ],
     ),
   ),
