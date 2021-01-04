@@ -10,7 +10,8 @@ import 'package:edualgo_app_demo/presentation/widgets/my_drawer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+
 
 class IndexPage extends StatefulWidget {
   const IndexPage();
@@ -79,84 +80,27 @@ class IndexPageState extends State<IndexPage>
                 index: pageNumberNotifier.value,
                 children: _widgets(scrollController: scrollController),
               ),
-              bottomNavigationBar: BottomNavigationBar(
+              bottomNavigationBar: ConvexAppBar(
+                top: -16,
                 backgroundColor: kThemeColor,
-                items: <BottomNavigationBarItem>[
-                  BottomNavigationBarItem(
-                    backgroundColor: kThemeColor,
-                    icon: FaIcon(
-                      FontAwesomeIcons.fileAlt,
-                      color: Colors.white,
-                    ),
-                    title: Text(
-                      'Docs',
-                      style: TextStyle(
-                        fontFamily: 'Recursive',
-                        fontSize: 15.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
+                style: TabStyle.reactCircle,
+                height: 60,
+                items: [
+                  TabItem(
+                    icon: Icons.description,
+                    title: 'Home',
                   ),
-                  BottomNavigationBarItem(
-                    backgroundColor: kThemeColor,
-                    icon: FaIcon(
-                      FontAwesomeIcons.gift,
-                      color: Colors.white,
-                    ),
-                    title: Text(
-                      'License',
-                      style: TextStyle(
-                        fontFamily: 'Recursive',
-                        fontSize: 15.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  BottomNavigationBarItem(
-                    backgroundColor: kThemeColor,
-                    icon: FaIcon(
-                      FontAwesomeIcons.questionCircle,
-                      color: Colors.white,
-                    ),
-                    title: Text(
-                      'FAQs',
-                      style: TextStyle(
-                        fontFamily: 'Recursive',
-                        fontSize: 15.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  BottomNavigationBarItem(
-                    backgroundColor: kThemeColor,
-                    icon: FaIcon(
-                      FontAwesomeIcons.addressCard,
-                      color: Colors.white,
-                    ),
-                    title: Text(
-                      'Dev',
-                      style: TextStyle(
-                        fontFamily: 'Recursive',
-                        fontSize: 15.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
+                  TabItem(icon: Icons.card_membership, title: 'License'),
+                  TabItem(icon: Icons.help, title: 'FAQs'),
+                  TabItem(icon: Icons.supervisor_account, title: 'Profile'),
                 ],
-                currentIndex: value,
-                fixedColor: Colors.redAccent,
-                onTap: _selectedTab,
+                initialActiveIndex: 1,
+                onTap:  _selectedTab,
               ),
+              
             ),
           );
         });
   }
 }
+
